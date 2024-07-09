@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Codificador y Decodificador de Texto</title>
+    <!-- Fuente de Google Fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
+    <!-- Hoja de estilos CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Contenedor principal de la página -->
+    <div class="container">
+        <!-- Título de la página -->
+        <h1>Codificador y Decodificador de Texto</h1>
+        <!-- Contenedor para el área de entrada de texto -->
+        <div class="textarea-container">
+            <textarea id="inputText" placeholder="Ingrese el texto aquí..."></textarea>
+        </div>
+        <!-- Contenedor para los botones de codificar y decodificar -->
+        <div class="buttons">
+            <!-- Botón para codificar el texto -->
+            <button onclick="encodeText()">Codificar</button>
+            <!-- Botón para decodificar el texto -->
+            <button onclick="decodeText()">Decodificar</button>
+        </div>
+        <!-- Contenedor para el área de salida de texto -->
+        <div class="textarea-container">
+            <textarea id="outputText" placeholder="El resultado aparecerá aquí..." readonly></textarea>
+        </div>
+    </div>
+    <!-- Inclusión del script JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>

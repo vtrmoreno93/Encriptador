@@ -1,0 +1,108 @@
+/* Aplicando la fuente Roboto a todo el documento */
+body {
+    font-family: 'Roboto', sans-serif; /* Fuente principal de la página */
+    display: flex; /* Usa flexbox para centrar el contenido */
+    justify-content: center; /* Centra el contenido horizontalmente */
+    align-items: center; /* Centra el contenido verticalmente */
+    height: 100vh; /* Altura completa de la ventana gráfica */
+    margin: 0; /* Elimina los márgenes predeterminados */
+    background-color: #1558b8; /* Color de fondo de la página */
+    color: #333; /* Color principal del texto */
+}
+
+/* Estilo del contenedor principal */
+.container {
+    text-align: center; /* Centra el texto dentro del contenedor */
+    background: #474646; /* Fondo blanco del contenedor */
+    padding: 2rem; /* Espaciado interno del contenedor */
+    border-radius: 1rem; /* Bordes redondeados */
+    box-shadow: 0 0.625rem 1.875rem rgba(0, 0, 0, 0.1); /* Sombra para darle profundidad */
+    max-width: 90%; /* Ancho máximo relativo al contenedor padre */
+    width: 40rem; /* Ancho fijo del contenedor */
+    margin: 1rem; /* Margen externo */
+}
+
+/* Estilo para el título principal */
+h1 {
+    margin-bottom: 1rem; /* Margen inferior */
+    color: #1a73e8; /* Color del texto del título */
+}
+
+/* Estilo del contenedor de áreas de texto */
+.textarea-container {
+    display: flex; /* Usa flexbox para centrar el contenido */
+    justify-content: center; /* Centra el contenido horizontalmente */
+    align-items: stretch;
+    margin: 1rem 0; /* Margen vertical */
+}
+
+/* Estilo de las áreas de texto */
+textarea {
+    width: 100%; /* Ancho completo del contenedor */
+    max-width: 100%; /* Ancho máximo relativo al contenedor padre */
+    height: 8rem; /* Altura fija */
+    padding: 1rem; /* Espaciado interno */
+    border: 0.125rem solid #ccc; /* Borde gris claro */
+    border-radius: 0.5rem; /* Bordes redondeados */
+    font-size: 1rem; /* Tamaño de la fuente */
+    resize: none; /* Deshabilita el redimensionamiento */
+    box-sizing: border-box; /* Incluye el espaciado interno y el borde en el tamaño total */
+}
+
+/* Estilo del contenedor de botones */
+.buttons {
+    display: flex; /* Usa flexbox para centrar el contenido */
+    justify-content: center; /* Centra el contenido horizontalmente */
+    margin: 1rem 0; /* Margen vertical */
+}
+
+/* Estilo de los botones */
+button {
+    padding: 0.75rem 1.5rem; /* Espaciado interno */
+    margin: 0 0.5rem; /* Margen horizontal */
+    border: none; /* Sin borde */
+    border-radius: 0.5rem; /* Bordes redondeados */
+    background-color: #1a73e8; /* Color de fondo */
+    color: white; /* Color del texto */
+    cursor: pointer; /* Cambia el cursor a puntero */
+    font-size: 1rem; /* Tamaño de la fuente */
+    transition: background-color 0.3s; /* Transición suave del color de fondo */
+}
+
+/* Estilo del botón cuando se pasa el mouse sobre él */
+button:hover {
+    background-color: #1558b8; /* Color de fondo cuando se pasa el mouse */
+}
+
+/* Media query para pantallas con un ancho máximo de 768px */
+@media (max-width: 768px) {
+    .container {
+        width: 80%; /* Ancho del contenedor relativo al tamaño de la pantalla */
+    }
+
+    textarea {
+        height: 6rem; /* Altura reducida */
+    }
+
+    button {
+        padding: 0.5rem 1rem; /* Espaciado interno reducido */
+        font-size: 0.875rem; /* Tamaño de la fuente reducido */
+    }
+}
+
+/* Media query para pantallas con un ancho máximo de 480px */
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1.5rem; /* Tamaño de la fuente del título reducido */
+    }
+
+    textarea {
+        height: 5rem; /* Altura reducida */
+    }
+
+    button {
+        padding: 0.5rem; /* Espaciado interno reducido */
+        margin: 0.25rem; /* Margen reducido */
+        font-size: 0.75rem; /* Tamaño de la fuente reducido */
+    }
+}
